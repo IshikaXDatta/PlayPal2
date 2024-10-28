@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="partials/css/issue-return.css">
+    <link rel="icon" type="image/png" href="partials/favicon.png">
+    <link rel="stylesheet" href="partials/css/issue-return.css"> <!-- Include the home.css for styling -->
+    <title>Issue & Return</title>
+</head>
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1><span class="blood-red">Play</span>Pal</h1>
+            </div>
+            <div class="profile-buttons">
+                <a href="home.html">
+                    <button id="home-button">Home</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+    
+    
+            <section id="order">
+                <h2>Order a CD/DVD</h2>
+                <form action="order.php" method="post">
+                    <label for="CD/DVD-title">CD/DVD Title:</label>
+                    <input type="text" id="CD/DVD-title" name="CD/DVD-title" required>
+                    <label for="CD/DVD-ID">CD/DVD ID:</label>
+                    <input type="text" id="CD/DVD-ID" name="CD/DVD-ID" required>
+                    <label for="member ID">Member ID:</label>
+                    <input type="text" id="Member ID" name="Member ID" required>
+                    <button type="submit">Submit Order</button>
+                </form>
+            </section>
+    
+            <section id="return">
+                <h2>Return a CD/DVD</h2>
+                <form action="return.php" method="post">
+                    <label for="CD/DVD-id">CD/DVD ID:</label>
+                    <input type="text" id="CD/DVD-id" name="CD/DVD-id" required>
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date" name="return-date" required>
+                    <button type="submit">Submit Return</button>
+                </form>
+            </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 PlayPal</p>
+    </footer>
+
+
+</body>
+</html>

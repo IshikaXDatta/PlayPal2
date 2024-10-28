@@ -1,0 +1,84 @@
+/* Reset some default styles */
+body, h1, h2, ul, li, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+}
+
+
+    header {
+        color: #fff;
+        text-align: center;
+        padding: 42px 0;
+    }
+    
+    nav ul {
+        background-color: #333;
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #141414;
+        font-weight: bold;
+    }
+    
+    nav ul li a.active {
+        color: #2cd6ce;
+    }
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2cd6ce;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #00000033;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #00000033;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
